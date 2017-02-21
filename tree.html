@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="tree_fontello/css/link.css">
+    <link rel="stylesheet" href="tree2_fontello/css/link.css">
+    <style>
+      .tree input[type="checkbox"]{
+        display: none;
+        padding-left: 20px;
+      }
+      .tree label:before{
+        list-style: none;
+        content: '\f256';
+        font-family: link;
+      }
+      .tree *::before{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      .tree a{
+        text-decoration: none;
+      }
+      .tree a:before{
+        content: '\e801';
+        font-family: link;
+      }
+      input[type="checkbox"]:checked~ul{
+        display: none;
+      }
+      input[type="checkbox"]:checked+label:before{
+        content: '\f255';
+        font-family: link;
+      }
+      .tree ul{
+        padding-top: 10px;
+        /*padding: 10px;
+        padding-left: 15px;*/
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="tree">
+      <li>
+        <input type="checkbox" id="root">
+        <!-- root's lable -->
+        <label for="root">ROOT</label>
+        <ul>
+          <li><a href="https://localhost">node1</a></li>
+          <li><a href="./masonry_layout.html">photo</a></li>
+          <li>
+            <input type="checkbox" id="node3">
+            <label for="node3">node3</label>
+            <ul>
+              <li><a href="https://localhost">node3_1</a></li>
+              <li><a href="https://localhost">node3_2</a></li>
+              <li><a href="https://localhost">node3_3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
