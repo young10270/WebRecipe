@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <style>
+      .btn{
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        margin: 20px 10px 20px 10px;
+        display: inline-block;
+        border-radius: 10px;
+        transition: all 0.2s;
+        text-shadow: 5px -2px gray;
+        font-family: 'Pangolin', cursive;
+      }
+      .btn:active{
+        transform: translateY(10px);
+      }
+      .btn.blue{
+        background-color: rgb(33, 176, 237);
+        border-bottom: 5px solid rgb(50, 74, 116);
+      }
+      .btn.blue:active{
+        border-bottom: 2px solid rgb(50, 74, 116);
+      }
+      .btn.red{
+        background-color: rgba(246, 34, 60, 0.87);
+        border-bottom: 5px solid rgb(128, 43, 66);
+      }
+      .btn.red:active{
+        border-bottom: 2px solid rgb(128, 43, 66);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="btn blue" href="#blue">blue</a>
+    <a class="btn red" href="#red">red</a>
+  </body>
+</html>
