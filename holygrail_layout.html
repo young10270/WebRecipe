@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        box-sizing: border-box;
+      }
+      .container>*{
+        border: 1px solid gray;
+      }
+      .container>.content>*{
+        border: 1px solid gray;
+      }
+      .container .content{
+        padding-left: 200px;
+        padding-right: 150px;
+        overflow: hidden;
+      }
+      .container>.content>*{
+        float: left;
+        padding-bottom: 2500px;
+        margin-bottom: -2500px;
+      }
+      .container .content main{
+        width: 100%;
+      }
+      .container .content nav{
+        width: 200px;
+        margin-left: -100%;
+        left: -200px;
+        position: relative;
+      }
+      .container .content aside{
+        width: 150px;
+        margin-right: -150px;
+      }
+      .container footer{
+        clear: both;
+      }
+      @media (max-width: 599px){
+        .container .content{
+          padding-left: 0;
+          padding-right: 0;
+          overflow: visible;
+        }
+        .container .content>*{
+          float: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+        .container .content main{
+          width: 100%;
+        }
+        .container .content nav{
+          width: auto;;
+          margin-left: 0;
+          left: 0;
+          position: relative;
+        }
+        .container .content aside{
+          width: auto;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>HEADER</h1>
+      </header>
+      <section class="content">
+        <main>
+          소프트웨어 개발 분야에는 정말 존경스러울 정도로 실력이 뛰어난 한국인 개발자가 많지만 유독 오픈 소스 프로젝트에서는 존재감이 빈약한 편이다. 야근에 치여 여유가 부족한 특유의 한국 정서도 한 몫 하지만 절대다수의 오픈 소스 프로젝트가 영어권 중심으로 진행되다보니 플랫폼과 언어의 장벽에 부딪혀 참여율이 저조한 것이 아닌가 생각된다. 지난 글에서 GitHub에 가입하는 방법을 소개했다면 이번 글에서는 실제로 오픈 소스 프로젝트에 참여하는 방법을 실제 예를 들어 설명하고자 한다. 블로그 주인장 본인이 Bootstrap Table이라는 Bootstrap 기반의 JavaScript 테이블 위젯 라이브러리의 한글화에 참여한 과정을 예로 설명하겠다.
+          소프트웨어 개발 분야에는 정말 존경스러울 정도로 실력이 뛰어난 한국인 개발자가 많지만 유독 오픈 소스 프로젝트에서는 존재감이 빈약한 편이다. 야근에 치여 여유가 부족한 특유의 한국 정서도 한 몫 하지만 절대다수의 오픈 소스 프로젝트가 영어권 중심으로 진행되다보니 플랫폼과 언어의 장벽에 부딪혀 참여율이 저조한 것이 아닌가 생각된다. 지난 글에서 GitHub에 가입하는 방법을 소개했다면 이번 글에서는 실제로 오픈 소스 프로젝트에 참여하는 방법을 실제 예를 들어 설명하고자 한다. 블로그 주인장 본인이 Bootstrap Table이라는 Bootstrap 기반의 JavaScript 테이블 위젯 라이브러리의 한글화에 참여한 과정을 예로 설명하겠다.
+        </main>
+        <nav>
+          <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+          </ul>
+        </nav>
+        <aside>
+          GitHub에 가입되어 있어야 한다.(내 계정이 존재해야 한다.)
+          로컬 PC에 Git이 설치되어 있어야 한다.
+        </aside>
+      </section>
+      <footer>
+        FOOTER
+      </footer>
+    </div>
+  </body>
+</html>
